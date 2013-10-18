@@ -1,0 +1,128 @@
+// Strip unit from a number value
+// Usage :
+//    strip-units(16px);
+// Will return "16" (as a number)
+@function strip-units($number) {
+    @return $number / ($number * 0 + 1);
+}
+
+// Write font-size rules for each given breakpoint, the font-size is calculated for each 
+// breakpoint
+//
+// Usage :
+//    $resos: $screenSmall, $screenMedium, $screenXlarge;
+//    @include fit-text(75px, $resos);
+//
+// * $base-size: base size to use in calcul;
+// * $resolutions: list of breakpoint width sizes to break on;
+// * $default-size: default width size to use for the default property;
+// * $min-size: minimal font size value, if a computed value is higher, the minimal 
+//   value is used instead;
+// * $ratio: use ratio in calcul with the base-size
+// * $unit: the unit to use in the font-size property, must be like "1px" or "1em" etc..
+// * $lineheight: if true line-height will be added with the font-size value
+@mixin fit-text($base-size, $resolutions, $default-width: 1920, $min-size: 0, $ratio: 0.0075, $unit: 1px, $lineheight: false) {
+    font-size: $base-size;
+    @if $lineheight {
+        line-height: $base-size;
+    }
+    $base-coefficient: $base-size/($default-width * $ratio);
+    
+    @each $breakpoint-item in $resolutions {
+        $thisFontSize : strip-units($base-coefficient*(strip-units($breakpoint-item)*$ratio));
+        @media (max-width: $breakpoint-item) {
+            @if $thisFontSize > $min-size {
+                font-size: $thisFontSize*$unit;
+                @if $lineheight {
+                    line-height: $thisFontSize*$unit;
+                }
+            } @else {
+                font-size: $min-size*$unit;
+                @if $lineheight {
+                    line-height: $min-size*$unit;
+                }
+            }
+        }
+    }
+}
+
+@mixin glowing($color, $backgroundColor: #ffffff, $radius: null, $radiusbox: full, $h-offset: 0, $v-offset: 0, $blur: 0, $spread: 0){
+    @if $backgroundColor {
+        background-color:$backgroundColor;
+    }
+    @if $radius {
+        @if $radiusbox == full {
+            @include border-left-radius($radius);
+            @include border-right-radius($radius);
+        } @else if $radiusbox == left {
+            @include border-left-radius($radius);
+        } @else if $radiusbox == right {
+            @include border-right-radius($radius);
+        }
+    }
+    @if $blur > 0 or $spread > 0 {
+        @include single-box-shadow($color, $h-offset, $v-offset, $blur, $spread);
+    }
+}
+
+@mixin positionning($name: absolute, $top: null, $right: null, $bottom: null, $left: null) {
+    position: $name;
+    @if $top {
+        top: $top;
+    }
+    @if $right {
+        right: $right;
+    }
+    @if $bottom {
+        bottom: $bottom;
+    }
+    @if $left {
+        left: $left;
+    }
+}
+
+@mixin flying-button($glow-color: #909090, $radius: $buttonRadius, $top: null, $bottom: null, $left: null, $right: null, $breakpoint: 1758px, $alternative: false, $display: block){
+    padding: 25px 25px 25px 35px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #BD5913;
+    text-transform: uppercase;
+    
+    background-color:#ffffff;
+    border: 1px solid $white;
+    
+    display: $display;
+    
+    @include single-box-shadow($glow_color, 0, 0, 10px, 3px);
+    
+    @if $radius {
+        @include border-radius($radius);
+    }
+    
+    @if $breakpoint {
+        @media (min-width: $breakpoint) {
+            @if $top {
+                @include positionning(absolute, $left: $left, $right: $right, $top: $top);
+            }
+            @if $bottom {
+                @include positionning(absolute, $left: $left, $right: $right, $bottom: $bottom);
+            }
+            @if $radius and $right and $right == 0 {
+                border-right: 0;
+                @include border-right-radius(0);
+            }
+            @if $radius and $left and $left == 0 {
+                border-left: 0;
+                @include border-left-radius(0);
+            }
+        }
+    } @else {
+        @if $top {
+            @include positionning(absolute, $left: $left, $right: $right, $top: $top);
+        }
+        @if $bottom {
+            @include positionning(absolute, $left: $left, $right: $right, $bottom: $bottom);
+        }
+        border-right: 0;
+    }
+}

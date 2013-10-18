@@ -1,0 +1,291 @@
+# English (United States) translations for PROJECT.
+# Copyright (C) 2013 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2013-10-15 20:15+0200\n"
+"PO-Revision-Date: 2013-10-15 20:16+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en_US <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.6\n"
+
+#: sources/templates/full.html:22 sources/templates/full.html:99
+#: sources/templates/full.html:114 sources/templates/full.html:239
+msgid "Classic"
+msgstr ""
+
+#: sources/templates/full.html:30 sources/templates/full.html:100
+#: sources/templates/full.html:243
+msgid "Yellow Gold"
+msgstr ""
+
+#: sources/templates/full.html:38 sources/templates/full.html:101
+#: sources/templates/full.html:247
+msgid "Dark Black"
+msgstr ""
+
+#: sources/templates/full.html:46 sources/templates/full.html:102
+#: sources/templates/full.html:251
+msgid "Rose Gold"
+msgstr ""
+
+#: sources/templates/full.html:63
+msgid "http://www.parrot.com/"
+msgstr ""
+
+#: sources/templates/full.html:63
+msgid "Go to Parrot.com"
+msgstr ""
+
+#: sources/templates/full.html:68
+msgid "http://www.parrot.com/zik/"
+msgstr ""
+
+#: sources/templates/full.html:68
+msgid "Parrot ZIK"
+msgstr ""
+
+#: sources/templates/full.html:75
+msgid "Design"
+msgstr ""
+
+#: sources/templates/full.html:76
+msgid "Tuned By"
+msgstr ""
+
+#: sources/templates/full.html:77
+msgid "Sound"
+msgstr ""
+
+#: sources/templates/full.html:78
+msgid "Touch"
+msgstr ""
+
+#: sources/templates/full.html:79
+msgid "Buy"
+msgstr ""
+
+#: sources/templates/full.html:115
+msgid ""
+"The Parrot Zik is revealing your emotions. It merges with the body, like "
+"a technological extension of you to listen to music."
+msgstr ""
+
+#: sources/templates/full.html:116
+msgid "slick, well round sound"
+msgstr ""
+
+#: sources/templates/full.html:117
+msgid "BBC Focus"
+msgstr ""
+
+#: sources/templates/full.html:126
+msgid "Soft material"
+msgstr ""
+
+#: sources/templates/full.html:135
+msgid "Metal finish"
+msgstr ""
+
+#: sources/templates/full.html:136
+msgid ""
+"Adjustable, the headband plays the contrast between metals'<br>alloy and "
+"&ldquo;leather-like&rdquo; band."
+msgstr ""
+
+#: sources/templates/full.html:137
+msgid ""
+"Despite its simple and humble design, Zik is certainly today one of our "
+"most successful products in terms of intuitive ergonomics"
+msgstr ""
+
+#: sources/templates/full.html:138
+msgid "Philippe Starck"
+msgstr ""
+
+#: sources/templates/full.html:150
+msgid "Tuned by"
+msgstr ""
+
+#: sources/templates/full.html:153
+msgid "Lou Reed"
+msgstr ""
+
+#: sources/templates/full.html:155
+msgid "I know how i like things to sound"
+msgstr ""
+
+#: sources/templates/full.html:157
+msgid ""
+"New-York based musician, singer &amp; songwriter Lou Reed is renowned for"
+" his work with The Velvet Underground and many solo hits such as "
+"&ldquo;Perfect Day&rdquo; and &ldquo;Walk on the Wild Side&rdquo;. Lou "
+"Reed worked in his state-of-the-art studio with his experienced sound "
+"engineer and Parrot Zik acoustics designers to create an immersive sound "
+"with more presence for your headphones. You can now listen to this "
+"beautiful sound thanks to a special control on the Parrot Audio Suite app"
+" for iPhone or Android."
+msgstr ""
+
+#: sources/templates/full.html:160
+msgid "http://www.youtube.com/watch?v=fVFQcmYK3a4"
+msgstr ""
+
+#: sources/templates/full.html:160
+msgid "Lou Reed’s interview for Parrot"
+msgstr ""
+
+#: sources/templates/full.html:172
+msgid "Active Noise Control"
+msgstr ""
+
+#: sources/templates/full.html:173
+#, python-format
+msgid ""
+"To insulate yourself from extraneous noise, Parrot has developed an "
+"ultra-high performance active noise control system which eliminates up to"
+" 98% of ambient noises."
+msgstr ""
+
+#: sources/templates/full.html:174
+msgid ""
+"While traditional ANC audio headsets only use two microphones to analyse "
+"ambient noises, the Zik has four microphones located inside and outside "
+"each earpiece offering total listening comfort."
+msgstr ""
+
+#: sources/templates/full.html:181
+msgid "Zik tested in<br>the streets of New-York"
+msgstr ""
+
+#: sources/templates/full.html:182
+msgid "They're pretty good for noisy New-York"
+msgstr ""
+
+#: sources/templates/full.html:183
+msgid "http://www.youtube.com/watch?v=--FcafLoT5w"
+msgstr ""
+
+#: sources/templates/full.html:183
+msgid "Watch the testimonial"
+msgstr ""
+
+#: sources/templates/full.html:197 sources/templates/full.html:203
+#: sources/templates/full.html:208 sources/templates/full.html:214
+#: sources/templates/full.html:219
+msgid "Touch control panel"
+msgstr ""
+
+#: sources/templates/full.html:198
+msgid ""
+"Parrot ZIK is fitted with an ultra-intuitive <b>touch control panel</b> "
+"on the right headphone: when connected via Bluetooth, slide your finger "
+"vertically to adjust the volume and horizontally to skip to the next "
+"track."
+msgstr ""
+
+#: sources/templates/full.html:199
+msgid ""
+"Parrot has developed a complete movement recognition algorithm designed "
+"to be simple and intuitive for the user."
+msgstr ""
+
+#: sources/templates/full.html:204
+msgid "Adjust Volume"
+msgstr ""
+
+#: sources/templates/full.html:205
+msgid ""
+"Sliding your finger vertically on the touch sensitive control panel "
+"adjusts the volume of your music or the caller voice."
+msgstr ""
+
+#: sources/templates/full.html:209
+msgid "Equalizer"
+msgstr ""
+
+#: sources/templates/full.html:210
+msgid ""
+"The Parametric EQ is a 7 bands equalizer (Center frequencies are: 60 Hz, "
+"150 Hz, 400 Hz, 1 kHz, 2.4 kHz, 6 kHz and 15 kHz)."
+msgstr ""
+
+#: sources/templates/full.html:211
+msgid ""
+"The user can choose from among the various presets (Flat, Pop, Club, "
+"Punchy, Deep, Crystal, User) to adjust the frequencies to the style of "
+"music you are listening to."
+msgstr ""
+
+#: sources/templates/full.html:215
+msgid "Change Track"
+msgstr ""
+
+#: sources/templates/full.html:216
+msgid ""
+"Sliding your finger horizontally on the touch sensitive control panel "
+"plays the next track or return to the previous one."
+msgstr ""
+
+#: sources/templates/full.html:220
+msgid "SmartPhone Application"
+msgstr ""
+
+#: sources/templates/full.html:221
+msgid ""
+"Parrot AUDIO SUITE allows the end-user to easily configure and modify the"
+" configuration and parameters through the iPhone/iPod/Smartphone user-"
+"interface."
+msgstr ""
+
+#: sources/templates/full.html:234
+msgid "Get it now"
+msgstr ""
+
+#: sources/templates/full.html:235
+msgid ""
+"Parrot ZIK Wireless headphones made for iPod,<br>iPhone, iPad / Android "
+"smartphones: <strong>349€*</strong>"
+msgstr ""
+
+#: sources/templates/full.html:255
+msgid "I want it"
+msgstr ""
+
+#: sources/templates/full.html:256
+msgid "Recommended retail price"
+msgstr ""
+
+#: sources/templates/full.html:280
+msgid "Join the Parrot Zik community on <span>Instagram</span>"
+msgstr ""
+
+#: sources/templates/full.html:288
+msgid "Keep me informed"
+msgstr ""
+
+#: sources/templates/full.html:292
+msgid "http://www.parrot.com/catalog/subscribe/usa/zik-gold-collection/?lang=en"
+msgstr ""
+
+#: sources/templates/full.html:298
+msgid "Copyright &copy; 2013 Parrot SA. All Rights Reserved"
+msgstr ""
+
+#: sources/templates/full.html:298
+msgid "Legal Mentions"
+msgstr ""
+
+#: sources/templates/full.html:310
+msgid "Choose your language"
+msgstr ""
+
